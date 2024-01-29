@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이아웃6</title>
+    <!--
+        날짜 : 2024/01/26
+        이름 : 윤혜지
+        내용 : 레이아웃 실습6
+    -->
+    <style>
+        /*초기화*/
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul, ol{
+            list-style: none;
+        }
+
+        a{
+            text-decoration: none;
+            color: #111;
+        }
+
+        #container{
+            width: 800px;
+            height: auto;
+            padding: 10px;
+            border: 1px solid black;
+            box-sizing: border-box;
+            background: #fff;
+            margin: 0 auto;
+        }
+        /*header*/
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 120px;
+            background: url('./images/potato.jpg') no-repeat;
+            background-size: 100% 100%;
+            border: 1px dashed black;
+            padding: 10px;
+            box-sizing: border-box;
+            text-align: center;
+            border-radius: 10px;
+        }
+        .header1 >p {
+            display: inline-block;
+            font : bold 32px '궁서체';
+            background-color: bisque;
+            margin-left: 10px;
+            border-radius: 20px;
+        }
+
+        /*main*/
+        main {
+            width: 100%;
+            height: auto;
+            background: #eee;
+            border: 1px dashed black;
+            padding: 10px;
+            box-sizing: border-box;
+            margin-top: 10px;
+            overflow: hidden;
+            border-radius: 10px;
+            text-align: center;
+        }
+        main>p {
+            display: inline-block;
+            font: normal 32px '궁서체';
+            background-color: brown;
+            color: white;
+            margin: 0;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        main>.flexbox{
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 10px;
+        }
+
+        .flexbox> aside {
+            display: flex;
+            position: relative;
+            width: 216px;
+            height: 400px;
+            background: yellow url('./images/ball.png') bottom/50% no-repeat;
+            border: 1px dashed #fff;
+            padding: 10px;
+            box-sizing: border-box;
+            margin-right: 10px;
+        }
+        .flexbox> aside > p {
+            display: block;
+            font: bold 16px '궁서체';
+            text-align: left;
+            margin-top: 10px;
+            width: 50px;
+            height: 90px;
+            background-color: #FFF;
+            border: 1px dashed #111;
+            box-sizing: border-box;
+            margin-left: 10px;
+        }
+
+        .flexbox>section {
+            display: flex;
+            flex-direction: column;
+            width: 530px;
+            height: 400px;
+            background-color: #ddd;
+            border: 1px dashed black;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .flexbox > section > article{
+            flex: 1;
+            width: 100%;
+            height: 168px;
+            background-color: #ccc;
+            border: 1px dashed black;
+            padding: 10px;
+            box-sizing: border-box;
+            margin-top: 10px;
+        }
+
+
+        /*footer*/
+        footer {
+            width: 100%;
+            height: 100px;
+            background: #eee;
+            border: 1px dashed black;
+            padding: 10px;
+            box-sizing: border-box;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header class="header1">
+            <p>감자</p>
+            <p>고구마</p>
+            <p>옥수수</p>
+        </header>
+        <main>
+            <p>main</p>
+            <div class="flexbox">
+                <aside>aside
+                    <p>네이버 홈쇼핑</p>
+                    <p>다음 홈쇼핑</p>
+                    <p>카카오톡 선물하기</p>
+                </aside>
+                <section>
+                    section
+                    <article>article #1</article>
+                    <article>article #2</article>
+                </section>
+            </div>
+        </main>
+        <footer>footer</footer>
+    </div>
+    
+</body>
+</html>
