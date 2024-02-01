@@ -1,0 +1,112 @@
+/* 초기화 */
+* {
+    margin: 0;
+    padding: 0;
+    font : normal 12px '돋움';
+}
+ul, ol {list-style: none;}
+a {text-decoration: none; color: #111;}
+input, textarea {outline: none;}
+
+#container {
+    width: 100%;
+    height: 100%;
+    border: 1px solid red;
+}
+
+/*header*/
+header {
+    width: 100%;
+    height: auto;
+}
+
+
+header > div:nth-child(1) {
+    width: 100%;
+    height: 44px;
+    background-color: #f3f3f3;
+}
+
+header > div:nth-child(1) > .top {
+    width: 1126px;
+    margin: 0 auto;
+    height: 44px;
+}
+.top > a:nth-child(1){}
+.top > a:nth-child(2){}
+.top > a:nth-child(3){}
+
+
+header > div:nth-child(2) {
+    width: 100%;
+    height: 110px;
+}
+header div:nth-child(2) > section {
+    width: 1126px;
+    height: 110px;
+    margin: 0 auto;
+}
+
+header div:nth-child(2) > section > a:nth-child(1) {
+    float: left;
+    margin-top: 15px;
+}
+header div:nth-child(2) > section > a:nth-child(2) {
+    float: right;
+    margin-top: 20px;
+}
+
+header > div:nth-child(3) {
+    width: 100%;
+    height: 46px;
+    background-color: #564f47;
+}
+header > div:nth-child(3) > nav {
+    display: block;
+    width: 1126px;
+    margin: 0 auto;
+}
+header > div:nth-child(3) > nav > a {
+    display: block;
+    width: 188px;
+    height: 46px;
+    float: left;
+    color: #b0a171;
+    
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+    font-family: Arial;
+    line-height: 46px;
+    box-sizing: border-box;
+}
+header > div:nth-child(3) > nav > a:hover {
+    background-color: #396340;
+    color: #fff;
+}
+
+main {}
+main > .banner {
+
+}
+main > .banner > article {
+    width: 1126px;
+    height: 398px;
+    border: 1px solid red;
+}
+main > .banner > article > img:nth-child(1){
+
+}
+main > .banner > article > img:nth-child(2){
+
+}
+main > .banner > article > img:nth-child(3){
+
+}
+main > .new {}
+main > .new > div{}
+
+
+
+/*main*/
+/*footer*/
